@@ -12,6 +12,5 @@ for i in frase:
         sin_espacio += i
         
 print(f"Cantidad de caracteres con los espacios {caracteres}")
-print(f"Cantidad de caracteres que ingresan al if {x}")
-print(f"Caracteres en cadena nueva sin espacios {len(sin_espacio)}")
+print(f"Caracteres en cadena sin espacios solo los caracteres son -> {len(sin_espacio)}")
 
