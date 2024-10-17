@@ -3,7 +3,7 @@
 #c) Imprime el resultado de ambas verificaciones.
 
 colores = ( "rojo","verde", "azul","amarillo")
-morado = "morado" in colores
+morado = "morado" in colores # "in" nos devuelve un true or false si se encuentra en la tupla colores
 
 if "azul" in colores :
     print("Se encuentra el azul en la tupla")

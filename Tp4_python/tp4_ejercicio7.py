@@ -3,7 +3,7 @@
 #b) Agrega una nueva clave profesión con el valor "Ingeniero".
 #c) Imprime el diccionario modificado.
 persona={"nombre":"Juan", "edad":30 , "ciudad":"Madrid"}
-persona["edad"]=31
+persona["edad"]=31 # modificamos el diccionario tomando la key de referencia
 persona["profesion"]= "Ingeniero"
 
-print(persona)
+print(persona) # imprimimos todos los datos del diccionario con key y dato incluido

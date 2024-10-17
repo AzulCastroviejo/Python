@@ -8,5 +8,5 @@ for i in tupla:
     if i == 4:
         x += 1
         
-print(f"El número 4 se encuentra {num_cuatro} en la tupla por ciclo for")     
+print(f"El número 4 se encuentra {x} en la tupla por ciclo for")     
 print(f"El número 4 se encuentra {num_cuatro} en la tupla por count()")
