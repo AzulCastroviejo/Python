@@ -13,6 +13,6 @@ while num != 0:
 
 print(lista)    
 indice = (int(input(f"Ingresa el indice del elemento que deseas eliminar hasta el {len(lista)} - "))) -1 
-del lista[indice]
+del lista[indice]# ELIMINA EN LISTA POR INDICE
 
 print(lista)
