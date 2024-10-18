@@ -6,8 +6,26 @@ lista = []
 
 for elemento in range(0,num):
     lista.append(int(input(f"Ingresa el número ")))
-    
+"""   
 print(lista)
 lista.reverse()
-print(f"La lista a la reversa es : {lista}")
+"""
+lista_reversa = []
+x = 0
+y = num
+
+for i in range(0,num):#con append
+    x = lista[y-1]
+    lista_reversa.append(x)
+    y -=1
+    
+"""
+y = num
+for i in range(0,num):# sin append 
+    x = lista[y-1]
+    lista_reversa += [x]
+    y -= 1
+    """
+    
+print(f"La lista a la reversa es : {lista_reversa}")
     

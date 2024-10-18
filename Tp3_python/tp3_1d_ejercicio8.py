@@ -12,7 +12,8 @@ print("Ingresa los números que desees a la lista , cuando temines ingresa 0")
 
 while num != 0:
     num = int(input("Ingresa el número a la lista : "))
-    lista.append(num)   
+    if num != 0:
+      lista.append(num)   
 
 listaRep = set(lista) 
 duplicado = set()

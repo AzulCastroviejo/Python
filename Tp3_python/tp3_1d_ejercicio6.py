@@ -6,7 +6,7 @@
 
 lista = []
 num =1
-print("Ingresa los npumeros que desees a la lista , cuando temines ingresa 0")
+print("Ingresa los numeros que desees a la lista , cuando temines ingresa 0")
 
 while num != 0:
     num = int(input("Ingresa el número a la lista : "))
