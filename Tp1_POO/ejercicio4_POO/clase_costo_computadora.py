@@ -61,7 +61,7 @@ def main():
         if opc.upper() == "NO":
             break
         elif opc.upper() == "SI":
-            print("Se agrefara una nueva computadora")
+            print("Se agregara una nueva computadora")
         else:
             print("Opcion incorrecta se tomara com un SI ")
             

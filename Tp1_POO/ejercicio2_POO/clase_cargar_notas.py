@@ -29,10 +29,9 @@ class CargarNotas:
         
 def main():
     
-    cantidad = int(input("Ingresa la cantidad de alumnos para ingresar sus notas : "))
     alumnos = CargarNotas()
     
-    while cantidad != 0:
+    while True:
         
         print(  "INGRESE LOS DATOS DEL ALUMNO" ) 
         nombre_completo= input("Ingresa el nombre completo : ")
@@ -51,10 +50,15 @@ def main():
             catedra = str(input("Ingresar la catedra : "))
             nota_completo = Nota(catedra , nota_examen)
             alumno.sumar_notas(nota_completo)
-           
-       
+        
+        
         CargarNotas.cargarNotas(alumnos ,alumno)
-        cantidad -=1
+        opc = str(input("Desea agregar un nuevo alumno SI/NO "))  
+        if opc.upper() == "NO":
+            break 
+       
+        
+        
         
     CargarNotas.imprimirAlumnos(alumnos)    
         

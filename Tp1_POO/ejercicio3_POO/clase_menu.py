@@ -25,9 +25,8 @@ class MenuRestaurant :
 def main():
     
     menu = MenuRestaurant()
-    cantidad_platos = int(input("Ingresa la cantidad de platos que deseas en tú menú : "))             
 
-    while cantidad_platos != 0 :
+    while True :
         print("")
         nombre_plato = str(input("Ingresa el nombre del plato : "))
         precio = float(input("Ingresa el precio de este plato : $"))
@@ -49,18 +48,21 @@ def main():
                 
                 print("")
                 ingrediente = str(input("Ingrese el ingrediente que lleva : "))
-                
-                if ingrediente.lower() == "listo":
-                    break
-                
                 cantidad = float(input(f"Ingrese la cantidad de {ingrediente} que lleva el plato : "))
                 unidad_medida = str(input("Ingrese la unidad de medida de la cantidad previamente ingresada : "))
                 ingrediente_final = Ingrediente(ingrediente , cantidad , unidad_medida)
                 plato.agregar_ingrediente(ingrediente_final)
+                opc = str(input("Deseas agregar otro igrediente SI / NO : "))
+                
+                if opc.upper() == "NO":
+                    break
         
         
         menu.agregar_plato(plato)                
-        cantidad_platos -= 1
+        opc = str(input("Deseas cargar un nuevo plato SI/ NO :"))
+        
+        if opc.upper()== "NO":
+            break
         
     menu.mostrar()    
 
