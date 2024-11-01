@@ -6,3 +6,6 @@ class Computadora:
         self.marca = marca
         self.modelo = modelo
         self.componentes_CPU = []
+        
+    def agregar_componente(self , componente):
+        self.componentes_CPU.append(componente)
